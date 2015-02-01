@@ -1,0 +1,17 @@
+{
+    "contents" : "---\ntitle: \"Project 1\"\noutput: html_document\n---\n\nThis is the R markdown file for project 1.\n\nGroup members: Adam Humphrey, Travis Cox, Lola Shonaike\n\nHere are the tables of customers, items, orders, and order details stored in data frames.\n\n```{r}\nsource(\"../01 Data/Dataframe call.R\", echo = TRUE)\n```\n\nHere are the plots for each table:\n\n##Customers##\n```{r, echo=FALSE}\nplot(cars)\n```\n\n##Items##\n```{r, echo=FALSE}\nplot(cars)\n```\n\n##Orders##\n```{r, echo=FALSE}\nplot(cars)\n```\n\n##Order details##\n```{r, echo=FALSE}\nggplot(order_details, aes(x = ITEM_ID, y = ORDER_QTY) ) + geom_point()\n```\n",
+    "created" : 1422818162809.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "842159345",
+    "id" : "3A0390E1",
+    "lastKnownWriteTime" : 1422824913,
+    "path" : "~/DataVisualization/DV_RProject1/DV_RProject1/00 Doc/RmdDoc.Rmd",
+    "project_path" : "00 Doc/RmdDoc.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}

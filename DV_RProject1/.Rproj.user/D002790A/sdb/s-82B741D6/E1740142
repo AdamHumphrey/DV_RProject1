@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1422823456281.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E1740142",
+    "lastKnownWriteTime" : 7162247809294422623,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "order_details",
+        "contentUrl" : "content?title=order_details&file=3f72db51936449a084cd94db5088eec0.htm",
+        "displayedObservations" : "68",
+        "displayedVariables" : 3,
+        "totalObservations" : "68",
+        "variables" : "3"
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
