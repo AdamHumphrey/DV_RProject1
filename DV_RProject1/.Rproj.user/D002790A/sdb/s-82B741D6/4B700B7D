@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1422894719379.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "4B700B7D",
+    "lastKnownWriteTime" : 1,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "fulldf",
+        "contentUrl" : "content?title=fulldf&file=89d6ed2d0b0e46b1a8e52e6c9bbbf748.htm",
+        "displayedObservations" : 68,
+        "displayedVariables" : 20,
+        "totalObservations" : 68,
+        "variables" : 20
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

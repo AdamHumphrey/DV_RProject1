@@ -1,12 +1,12 @@
 {
-    "contents" : "library(\"RCurl\")\nfulldf <- data.frame(eval(parse(text=substring(getURL(URLencode('http://129.152.144.84:5001/rest/native/?query=\"select * from orders o join customers c on o.customer_id = c.customer_id join order_details d on o.order_id = d.order_id join items i on d.item_id = i.item_id\"'), httpheader=c(DB='jdbc:oracle:thin:@129.152.144.84:1521/PDB1.usuniversi01134.oraclecloud.internal', USER='DV_ORDERS', PASS='orcl', MODE='native_mode', MODEL='model', returnFor = 'R', returnDimensions = 'False'), verbose = TRUE), 1, 2^31-1))))\nfulldf\n",
+    "contents" : "library(\"RCurl\")\nlibrary(\"ggplot2\")\nfulldf <- data.frame(eval(parse(text=substring(getURL(URLencode('http://129.152.144.84:5001/rest/native/?query=\"select * from orders o join customers c on o.customer_id = c.customer_id join order_details d on o.order_id = d.order_id join items i on d.item_id = i.item_id\"'), httpheader=c(DB='jdbc:oracle:thin:@129.152.144.84:1521/PDB1.usuniversi01134.oraclecloud.internal', USER='DV_ORDERS', PASS='orcl', MODE='native_mode', MODEL='model', returnFor = 'R', returnDimensions = 'False'), verbose = TRUE), 1, 2^31-1))))\nfulldf\n",
     "created" : 1422824567929.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "994718367",
+    "hash" : "2558931815",
     "id" : "869785CF",
-    "lastKnownWriteTime" : 1422825027,
+    "lastKnownWriteTime" : 1422894865,
     "path" : "~/DataVisualization/DV_RProject1/DV_RProject1/01 Data/Full data frame.R",
     "project_path" : "01 Data/Full data frame.R",
     "properties" : {
