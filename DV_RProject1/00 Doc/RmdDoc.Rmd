@@ -31,6 +31,8 @@ plot(cars)
 ```
 
 ##Order details##
+This graph shows the frequency of which each quantity of each item was sold.
+EX: One copy of Umani in Concert was ordered 10 times, and two copies of Umani in Comcers were ordered once.
 ```{r, echo=FALSE}
-ggplot(order_details, aes(x = ITEM_ID, y = ORDER_QTY) ) + geom_point()
+ggplot(order_details, aes(x = ITEM_ID, y = ORDER_QTY) ) + stat_sum(aes(group = 1, color = ITEM_ID))
 ```
