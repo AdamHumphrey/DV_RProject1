@@ -32,6 +32,42 @@ ggplot(orders, aes(x=CUSTOMER_ID)) + geom_bar(fill="white",colour="darkgreen") +
 ```
 
 ##Order details##
+This graph shows the frequency of which each quantity of each item was sold.
+EX: One copy of Umani in Concert was ordered 10 times, and two copies of Umani in Comcers were ordered once.
 ```{r, echo=FALSE}
-ggplot(order_details, aes(x = ITEM_ID, y = ORDER_QTY) ) + geom_point()
+source("../01 Data/Full data frame.R", echo = TRUE)
+ggplot(order_details, aes(x = ITEM_ID, y = ORDER_QTY) ) + stat_sum(aes(group = 1, color = ITEM_ID))
+```
+
+##Reproducing given plots with accompanying R code##
+Here are the plots with the R code used to recreat them.
+
+Graph of order date by shipping date colored by unit price
+
+###R code:###
+
+ggplot(fulldf, aes(x = as.Date(ORDER_DATE, "%Y-%m-%d"), y = as.Date(SHIPPED_DATE, "%Y-%m-%d"), colour = as.factor(UNIT_PRICE))) + geom_point() + facet_wrap(~ CUSTOMER_STATE)
+
+```{r, echo=FALSE}
+ggplot(fulldf, aes(x = as.Date(ORDER_DATE, "%Y-%m-%d"), y = as.Date(SHIPPED_DATE, "%Y-%m-%d"), colour = as.factor(UNIT_PRICE))) + geom_point() + facet_wrap(~ CUSTOMER_STATE)
+```
+
+Graph of order date by shipping date colored by title of item
+
+###R code:###
+
+ggplot(fulldf, aes(x = as.Date(ORDER_DATE, "%Y-%m-%d"), y = as.Date(SHIPPED_DATE, "%Y-%m-%d"), colour = as.factor(TITLE))) + geom_point() + facet_wrap(~ CUSTOMER_STATE)
+
+```{r, echo=FALSE}
+ggplot(fulldf, aes(x = as.Date(ORDER_DATE, "%Y-%m-%d"), y = as.Date(SHIPPED_DATE, "%Y-%m-%d"), colour = as.factor(TITLE))) + geom_point() + facet_wrap(~ CUSTOMER_STATE)
+```
+
+Graph of order date by shipping date colored by artist
+
+###R code:###
+
+ggplot(fulldf, aes(x = as.Date(ORDER_DATE, "%Y-%m-%d"), y = as.Date(SHIPPED_DATE, "%Y-%m-%d"), colour = as.factor(ARTIST))) + geom_point() + facet_wrap(~ CUSTOMER_STATE)
+
+```{r, echo=FALSE}
+ggplot(fulldf, aes(x = as.Date(ORDER_DATE, "%Y-%m-%d"), y = as.Date(SHIPPED_DATE, "%Y-%m-%d"), colour = as.factor(ARTIST))) + geom_point() + facet_wrap(~ CUSTOMER_STATE)
 ```
