@@ -22,12 +22,13 @@ plot(cars)
 
 ##Items##
 ```{r, echo=FALSE}
-plot(cars)
+ggplot(items, aes(x=ARTIST)) + geom_bar() + ylab("Number of Albums on sale") + xlab("Artist") + coord_flip()
 ```
 
 ##Orders##
 ```{r, echo=FALSE}
-plot(cars)
+ggplot(orders, aes(x=CUSTOMER_ID)) + geom_bar(fill="white",colour="darkgreen") + ylab("Number of Orders")+ scale_x_discrete("Customer ID") 
+                                                                                                                            
 ```
 
 ##Order details##
