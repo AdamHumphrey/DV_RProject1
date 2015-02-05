@@ -16,6 +16,7 @@ source("../01 Data/Dataframe call.R", echo = TRUE)
 Here are the plots for each table:
 
 ##Customers##
+If you look to the left, their is Count Legend, with # of Customers from Califronia being 10.
 ```{r, echo=FALSE}
 ggplot(customers, aes(x = CUSTOMER_STATE)) +
   geom_bar(width = 1, colour = "black") + coord_polar()
