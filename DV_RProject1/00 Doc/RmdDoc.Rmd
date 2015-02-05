@@ -17,7 +17,8 @@ Here are the plots for each table:
 
 ##Customers##
 ```{r, echo=FALSE}
-plot(cars)
+ggplot(customers, aes(x = CUSTOMER_STATE)) +
+  geom_bar(width = 1, colour = "black") + coord_polar()
 ```
 
 ##Items##
